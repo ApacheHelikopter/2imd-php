@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Something</h1>
+    <script>
+    
+        let movie = function(title){
+            this.title=title;
+            this.play = () => {
+                console.log(`Now playing ${this.title}`);
+            }
+        }
+
+        let movie1 = new movie("Aquaman");
+        let movie2 = new movie("Predator");
+        let movie3 = new movie("Inception");
+
+        movie2.play();
+
+        HTMLElement.prototype.hide = function(){
+            this.style.display = "none";
+        }
+        var title = document.querySelector("h1");
+        title.hide();
+    </script>
+</body>
+</html>
